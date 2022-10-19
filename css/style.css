@@ -1,21 +1,99 @@
-body {
-  font-family: Verdana, sans-serif; 
-  color: saddlebrown;
-}
-h2 {
-  color: black;
-  font-size: medium;
-}
-h1 {
-  color: black;
-}
 html {
   scroll-behavior: smooth;
 }
-.menu a {
-  color: black;
+
+
+/* HEADER */
+
+.header {
+  position: sticky;
+  top: 0px;
 }
+
+.navbar {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 32px;
+  
+  
+}
+.logo {
+  color: white;
+  font-size: 24px;
+
+}
+.menu {
+  list-style: none;
+  background-color: black;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.menu a {
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  margin: 0px 4px;
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-radius: 16px;
+  padding: 4px 16px;
+}
+
+.menu a.active {
+  background-color: darkblue;
+}
+
 .menu a:hover {
-  color: darkblue;
+  color: rgb(255, 225, 0);
   font-weight: bold;
+}
+
+/* BODY */
+
+body {
+  font-family: Verdana, sans-serif; 
+  color: black;
+  font-size: large;
+}
+
+h1 {
+  color: darkblue;
+  font-size: 24px;
+}
+.section {
+  min-height: 100vh;
+  padding-top: 64px;
+}
+
+.social {
+  align-items: center;
+}
+.headersocial {
+
+  justify-content: center;
+  display: flex;
+}
+
+.iconsocial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.iconsocial a {
+  padding: 0px 4px;
+}
+
+.backtotop {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0px;
 }
