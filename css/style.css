@@ -28,6 +28,11 @@ html {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
 }
+.logo a{
+  color: white;
+  white-space: nowrap;
+  text-decoration: none;
+}
 
 .logo :hover {
   color: rgb(255, 225, 0);
@@ -66,18 +71,27 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   color: black;
   font-size: 20px;
+  margin: 0;
 }
 
 h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
   color: darkblue;
   font-size: 32px;
 }
 .section {
-  min-height: 100vh;
-  min-width: 100vw;
-  padding-top: 20px;
+  
+  max-width: 100vw;
+  max-width: 100%;
+  padding-top: 60px;
+}
+
+.first {
+  padding-top: 0px;
 }
 
 .social {
@@ -107,3 +121,9 @@ h1 {
 .backtotop :hover {
   color: darkblue;
 }
+
+.backtotop :visited {
+  color: red;
+}
+
+
