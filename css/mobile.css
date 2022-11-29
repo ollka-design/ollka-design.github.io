@@ -1,6 +1,75 @@
-@media screen and (max-width: 576px) {
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+
+    .navbar {
+     padding: 4px 100px;
+     background-color: blue;
+    }
+    .likeme {
+        padding: 140px 100px;
+    }
+    .ollka {
+        width: 38%;
+    }  
+    .photome {
+        width: 58%;
+    }    
+
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+
+        .navbar {
+         padding: 4px 100px;
+         background-color: brown;
+        
+        }
+        .likeme {
+            padding: 140px 60px;
+            
+        }
+        .ollka {
+            width: 40%;
+        }  
+        .photome {
+            width: 61%;
+        }       
+            
+    
+        }
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+    .navbar {
+        background-color: rgb(17, 202, 144);
+    }
+    .container {
+        width: 540px;
+        margin: 0 auto;
+        background-color: blanchedalmond;
+
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+    .navbar {
+        background-color: aqua;
+    }
+    .container {
+        width: 540px;
+        margin: 0 auto;
+        background-color: blanchedalmond;
+
+    }
+
+}
+
+@media screen and (max-width: 575px) {
     .navbar {
         flex-direction: column;
+        background-color: blueviolet;
     }
     
     .menu {
@@ -16,19 +85,7 @@
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 767px) {
-
-    .navbar {
-        background-color: rgb(17, 202, 144);
-    }
-    .container {
-        width: 540px;
-        margin: 0 auto;
-        background-color: blanchedalmond;
-        
-    }
-
-}
 
 
+    
 

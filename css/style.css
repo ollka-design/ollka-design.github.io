@@ -19,7 +19,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 64px;
+  padding: 4px 200px;
   width: 100%;
 }
 .logo {
@@ -137,6 +137,13 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 300px;
+  padding: 70px 200px;
   width: 100%;
+}
+
+.ollka {
+  width: 36%;
+}
+.photome {
+  width: 55%;
 }
