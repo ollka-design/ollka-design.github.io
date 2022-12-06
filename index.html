@@ -3,12 +3,12 @@
   <title>You are welcome,dear!</title>
   <meta property="og:image" content="https://ollka-design.github.io/me2.JPG">
   <meta name="description" content="частинка мене">
-  <link rel="stylesheet" href="css\style.css" />
-  <link rel="stylesheet" href="css/mobile.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css" />
+<link rel="stylesheet" href="css\style.css" />
+<link rel="stylesheet" href="css/mobile.css" />
 
 </head>
 <body>
@@ -48,14 +48,17 @@
 </div>
   
 
+
 <div class="section second" id="aboutme">
     <div class="biography">
       <div class="textme">
         <h1>СТАНОВЛЕННЯ МЕНЕ</h1>
         <p> Дизайнер, creative person i просто щаслива людинка:)</p>
+        <p> ШКОЛА → УНІВЕР → ХАОС → АКАДЕМІЯ</p>
+        <p> Сьогодення — життя сповнене емоцій. Хороших і не дуже (нові реаліїї). Зрозуміла вислів «час летить», але страшенно подобається мій ритм життя! Вчусь-вчусь і трішки працюю.</p>
       </div>
       <div class="biophotome"> 
-        <img src="img/biography.jpg" alt=""  class="oll" >
+        <img src="img/biography.jpg" alt=""  class="biobio" width="100%">
       </div>
     </div>
 </div>
@@ -75,16 +78,50 @@
 
 </div>
 
-<div class="section third" id="portfolio"> 
-  <h1> ПРОФЕСІЙНА ПРАКТИКА</h1>
-  <p> Голосно сказано «професійна»! Але на шляху до того. Наразі подобається брендинг. І ось кілька моїх робіт:</p>
-  <img src="img/logo-1.jpg" width="33%" />
-  <img src="img/logo-2.jpg" width="33%" />
-  <img src="img/logo-3.jpg" width="33%" />
-  <p>
-    <a href="https://lnam.edu.ua/uk/graphic/about.html" target="_blank">Місце зупинки мого навчання</a>
-  </p>
+
+
+
+<div class="section third "  id="portfolio" > 
+  <div class="gallery" id="lightgallery" > 
+
+    <div class="gallery-item">
+      <a href="img/logo-1.jpg" target="_blank">
+      <img src="img/telegram-1.jpg" /></a>
+    </div>
+  
+    <div class="gallery-item">
+      <a href="img/logo-1.jpg" target="_blank">
+      <img src="img/telegram-1.jpg" /></a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="img/logo-1.jpg" target="_blank">
+      <img src="img/telegram-1.jpg" /></a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="img/logo-1.jpg" target="_blank">
+      <img src="img/telegram-1.jpg" /></a>
+    </div>
+
+    <div class="gallery-item">
+      <a href="img/logo-1.jpg" target="_blank">
+      <img src="img/telegram-1.jpg" /></a>
+    </div>
+
+
+    <div class="gallery-item">
+      <a href="img/logo-1.jpg" target="_blank">
+      <img src="img/telegram-1.jpg" /></a>
+    </div>
+
+    </div>
+  </div>
 </div>
+
+
+
+
 
 <div class="social" id="socialmedia"> 
 
@@ -104,5 +141,17 @@
     <a href="#top">Повернутися на початок сторінки)
     </a>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"></script>
+
+<script type="text/javascript">
+  lightGallery(document.getElementById("lightgallery"),
+  {
+    selector: ".gallery-item a"
+  }
+  
+  
+  
+  );
+</script>
 </body>
 </html>

@@ -6,11 +6,16 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+  margin: 0;
+}
+
 /* HEADER */
 
 .header {
-  position: sticky;
+  position: fixed;
   top: 0px;
+  width: 100%;
 }
 
 .navbar {
@@ -38,6 +43,8 @@ html {
   color: rgb(255, 225, 0);
 }
 
+
+
 .menu {
   list-style: none;
   background-color: black;
@@ -50,6 +57,7 @@ html {
 
 .menu a {
   width: 100%;
+  margin: 0;
   text-decoration: none;
   color: white;
   margin: 0px 4px;
@@ -66,6 +74,8 @@ html {
 .menu a:hover {
   color: rgb(255, 225, 0);
 }
+
+
 
 /* BODY */
 
@@ -102,7 +112,7 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 70px 200px;
+  padding: 160px 200px;
   width: 100%;
 }
 
@@ -118,6 +128,7 @@ h1 {
 .second {
   background-color: rgb(30, 30, 30);
   min-height: 120vh;
+ 
 }
 
 .biography {
@@ -127,12 +138,19 @@ h1 {
   padding: 32px 200px 16px 200px;
 }
 
-.oll {
-  width: auto;
-}
 .textme {
-  padding: 32px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0px ;
   color: aliceblue;
+}
+
+.textme p{
+  text-align: center;
+  padding: 4px;
+  margin: 0;
 }
 
 /* друг */
@@ -141,6 +159,34 @@ h1 {
   min-height: 100vh;
   background-color: rgb(45, 45, 45);
 }
+
+
+
+/* portfolio */
+
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery-item {
+  flex-basis: 33%;
+}
+
+.gallery a {
+  display: flex;
+}
+
+
+
+/* social */
 
 .social {
   align-items: center;

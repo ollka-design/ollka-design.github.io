@@ -13,7 +13,9 @@
     .photome {
         width: 58%;
     }    
-
+    .biography {
+      padding: 32px 100px; 
+    }
     }
 
     @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -34,10 +36,11 @@
             width: 61.3%;
         }       
            
-        .first {
-            min-height: auto;
-          }
-    
+      
+        .biography {
+          padding: 32px 60px; 
+        }
+
         }
 
 
@@ -72,8 +75,11 @@
         width: 61.3%;
     }   
 
-      .first {
+    .first {
         min-height: auto;
+      }
+    .biography {
+        padding: 32px 60px; 
       }
 }
 
@@ -134,7 +140,9 @@
     .photome {
         width: 84%;
     }   
-        
+    .biography {
+      padding: 32px 100px; 
+    }    
     
 
    
