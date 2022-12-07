@@ -1,174 +1,148 @@
 @media screen and (min-width: 1200px) and (max-width: 1500px) {
+  .navbar {
+    padding: 4px 100px;
+    background-color: black;
+  }
+  .likeme {
+    padding: 140px 100px;
+  }
+  .ollka {
+    width: 38%;
+  }
+  .photome {
+    width: 58%;
+  }
+  .biography {
+    padding: 32px 100px;
+  }
+}
 
-    .navbar {
-     padding: 4px 100px;
-     background-color: black;
-    }
-    .likeme {
-        padding: 140px 100px;
-    }
-    .ollka {
-        width: 38%;
-    }  
-    .photome {
-        width: 58%;
-    }    
-    .biography {
-      padding: 32px 100px; 
-    }
-    }
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar {
+    padding: 4px 60px;
+    background-color: black;
+  }
+  .likeme {
+    padding: 140px 60px;
+  }
+  .ollka {
+    width: 40%;
+  }
+  .photome {
+    width: 61.3%;
+  }
 
-    @media screen and (min-width: 992px) and (max-width: 1199px) {
-
-        .navbar {
-         padding: 4px 60px;
-         background-color: black;
-        
-        }
-        .likeme {
-            padding: 140px 60px;
-            
-        }
-        .ollka {
-            width: 40%;
-        }  
-        .photome {
-            width: 61.3%;
-        }       
-           
-      
-        .biography {
-          padding: 32px 60px; 
-        }
-
-        }
-
+  .biography {
+    padding: 32px 60px;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar {
+    padding: 4px 60px;
+    background-color: rgb(182, 25, 25);
+  }
 
-    .navbar {
-        padding: 4px 60px;
-        background-color: rgb(182, 25, 25);
-    }
+  .menu {
+    font-size: medium;
+  }
 
-    .menu {
-        font-size: medium;
-      }
+  .menu a {
+    border-radius: 16px;
+    padding: 4px 12px;
+  }
 
-    .menu a {
-        border-radius: 16px;
-        padding: 4px 12px;
-      }
+  .logo {
+    font-size: 24px;
+  }
 
-    .logo {
-        font-size: 24px;
-      }
-    
-    .likeme {
-        padding: 140px 60px;
-        
-    }
-    .ollka {
-        width: 40%;
-    }  
-    .photome {
-        width: 61.3%;
-    }   
+  .likeme {
+    padding: 140px 60px;
+  }
+  .ollka {
+    width: 40%;
+  }
+  .photome {
+    width: 61.3%;
+  }
 
-    .first {
-        min-height: auto;
-      }
-    .biography {
-        padding: 32px 60px; 
-      }
+  .first {
+    min-height: auto;
+  }
+  .biography {
+    padding: 32px 60px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
+  .navbar {
+    background-color: black;
+    padding: 0px 100px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .navbar {
-        background-color: black;
-        padding: 0px 100px;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    
-    .menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        font-size: medium;
-        
-      }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: medium;
+  }
 
-      .menu a {
-        margin: 0px 0px;
-        padding: 0px 4px;
-        line-height: 2em;
-      }
-    
-      .menu a.active {
-        background-color: transparent;
-      }
+  .menu a {
+    margin: 0px 0px;
+    padding: 0px 4px;
+    line-height: 2em;
+  }
 
-      .logo {
-        color: white;
-        font-size: 24px;
-        padding-top: 32px;
+  .menu a.active {
+    background-color: transparent;
+  }
 
-      }
-      .logo a {
-        color: white;
-        white-space: nowrap;
-        text-decoration: none;
-      }
-      
-      .logo :hover {
-        color: rgb(255, 225, 0);
-      }
-      .likeme {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 60px 60px;
-        
-      }
+  .logo {
+    color: white;
+    font-size: 24px;
+    padding-top: 32px;
+  }
+  .logo a {
+    color: white;
+    white-space: nowrap;
+    text-decoration: none;
+  }
 
-    .ollka {
-        width: 84%;
-    }  
-    .photome {
-        width: 84%;
-    }   
-    .biography {
-      padding: 32px 100px; 
-    }    
-    
+  .logo :hover {
+    color: rgb(255, 225, 0);
+  }
+  .likeme {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px;
+  }
 
-   
-
+  .ollka {
+    width: 84%;
+  }
+  .photome {
+    width: 84%;
+  }
+  .biography {
+    padding: 32px 100px;
+  }
 }
 
 @media screen and (max-width: 575px) {
-    .navbar {
-        flex-direction: column;
-        background-color: blueviolet;
-    }
-    
-    .menu {
-        flex-direction: column;
-    }
-    
-    .menu a {
-        line-height: 2em;
-    } 
-    
-    .container {
-        width: 540px;
-    }
+  .navbar {
+    flex-direction: column;
+    background-color: blueviolet;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu a {
+    line-height: 2em;
+  }
 }
-
-
-
-    
-

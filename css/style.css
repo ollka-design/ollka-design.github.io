@@ -6,7 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   margin: 0;
 }
 
@@ -43,8 +43,6 @@ body{
   color: rgb(255, 225, 0);
 }
 
-
-
 .menu {
   list-style: none;
   background-color: black;
@@ -75,8 +73,6 @@ body{
   color: rgb(255, 225, 0);
 }
 
-
-
 /* BODY */
 
 body {
@@ -94,11 +90,23 @@ h1 {
   font-size: 28px;
   text-align: center;
 }
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(255, 225, 0);
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
 .section {
   max-width: 100vw;
   max-width: 100%;
   padding-top: 60px;
 }
+
+/* головна сторінка */
 
 .first {
   padding-top: 0px;
@@ -106,7 +114,6 @@ h1 {
   background-color: rgb(45, 45, 45);
 }
 
-/* головна сторінка */
 .likeme {
   display: flex;
   flex-direction: row;
@@ -123,12 +130,11 @@ h1 {
   width: 55%;
 }
 
-/* сьогодення */
+/* становлення */
 
 .second {
   background-color: rgb(30, 30, 30);
-  min-height: 120vh;
- 
+  min-height: 100vh;
 }
 
 .biography {
@@ -143,11 +149,15 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 32px 0px ;
+  padding: 32px 0px;
   color: aliceblue;
 }
 
-.textme p{
+.textme h1 {
+  padding: 0;
+}
+
+.textme p {
   text-align: center;
   padding: 4px;
   margin: 0;
@@ -155,20 +165,63 @@ h1 {
 
 /* друг */
 
-.dog {
+.third {
   min-height: 100vh;
   background-color: rgb(45, 45, 45);
 }
 
+.third h1 {
+  padding-bottom: 16px;
+  padding-top: 64px;
+}
 
+.dogi {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 200px;
+  gap: 24px;
+}
+
+.boxdog1 {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  position: relative;
+}
+
+.textdog1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  padding: 32px 32px;
+  color: aliceblue;
+  position: absolute;
+  top: 0;
+}
+
+.textdog1 p {
+  text-align: left;
+  margin: 0;
+}
+
+.boxdog2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* portfolio */
-
+.fourth {
+  background-color: rgb(30, 30, 30);
+}
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
-
+  padding: 32px 200px 16px 200px;
+  gap: 24px;
 }
 
 .gallery img {
@@ -177,14 +230,12 @@ h1 {
 }
 
 .gallery-item {
-  flex-basis: 33%;
+  flex-basis: 32%;
 }
 
 .gallery a {
   display: flex;
 }
-
-
 
 /* social */
 
@@ -218,10 +269,4 @@ h1 {
 
 .backtotop :visited {
   color: red;
-}
-
-.container {
-  max-width: 100vw;
-  margin: 0 auto;
-  min-height: 100vh;
 }
