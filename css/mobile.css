@@ -15,6 +15,9 @@
   .biography {
     padding: 32px 100px;
   }
+  .dogi {
+    padding: 0 100px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -34,6 +37,10 @@
 
   .biography {
     padding: 32px 60px;
+  }
+
+  .dogi {
+    padding: 0 60px;
   }
 }
 
@@ -71,6 +78,14 @@
   }
   .biography {
     padding: 32px 60px;
+  }
+
+  .dogi {
+    padding: 0 60px;
+  }
+
+  .third {
+    min-height: auto;
   }
 }
 

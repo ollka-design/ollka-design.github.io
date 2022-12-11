@@ -16,6 +16,7 @@ body {
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 3;
 }
 
 .navbar {
@@ -63,6 +64,10 @@ body {
   border: 0px solid transparent;
   border-radius: 16px;
   padding: 4px 16px;
+}
+
+.menu .active a {
+  background-color: blue;
 }
 
 .menu a.active {
@@ -135,6 +140,21 @@ h2 {
 .second {
   background-color: rgb(30, 30, 30);
   min-height: 100vh;
+}
+
+.swiper-button-next {
+  color: black;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: aqua;
+  transition: all 0.5s ease;
+}
+
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+  color: yellow;
 }
 
 .biography {
