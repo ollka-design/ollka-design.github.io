@@ -1,7 +1,9 @@
+/* перший екран */
+
 @media screen and (min-width: 1200px) and (max-width: 1500px) {
   .navbar {
     padding: 4px 100px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
   }
   .likeme {
     padding: 140px 100px;
@@ -17,13 +19,24 @@
   }
   .dogi {
     padding: 0 100px;
+    padding-bottom: 100px;
+    gap: 16px;
+  }
+  .gallery {
+    padding: 32px 100px 32px 100px;
+    gap: 16px;
+  }
+  .third {
+    min-height: auto;
   }
 }
+
+/* другий екран */
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .navbar {
     padding: 4px 60px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
   }
   .likeme {
     padding: 140px 60px;
@@ -41,13 +54,24 @@
 
   .dogi {
     padding: 0 60px;
+    padding-bottom: 100px;
+    gap: 16px;
+  }
+  .third {
+    min-height: auto;
+  }
+  .gallery {
+    padding: 32px 60px 32px 60px;
+    gap: 16px;
   }
 }
+
+/* третій екран */
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .navbar {
     padding: 4px 60px;
-    background-color: rgb(182, 25, 25);
+    background-color: rgb(0, 0, 0);
   }
 
   .menu {
@@ -56,7 +80,7 @@
 
   .menu a {
     border-radius: 16px;
-    padding: 4px 12px;
+    padding: 4px 8px;
   }
 
   .logo {
@@ -82,19 +106,35 @@
 
   .dogi {
     padding: 0 60px;
+    padding-bottom: 100px;
+    gap: 8px;
   }
 
   .third {
     min-height: auto;
   }
+
+  .gallery {
+    padding: 32px 60px 32px 60px;
+    gap: 8px;
+  }
+
+  .gallery-item {
+    flex-basis: 49%;
+  }
 }
+
+/* четвертий екран */
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   .navbar {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     padding: 0px 100px;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+  
   }
 
   .menu {
@@ -102,12 +142,14 @@
     flex-direction: column;
     justify-content: flex-end;
     font-size: medium;
+    
   }
 
   .menu a {
     margin: 0px 0px;
     padding: 0px 4px;
     line-height: 2em;
+    color: white;
   }
 
   .menu a.active {
@@ -117,7 +159,7 @@
   .logo {
     color: white;
     font-size: 24px;
-    padding-top: 32px;
+    
   }
   .logo a {
     color: white;
@@ -145,19 +187,104 @@
   .biography {
     padding: 32px 100px;
   }
+
+  .dogi {
+    padding: 0 100px;
+    padding-bottom: 100px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery {
+    padding: 32px 100px 32px 100px;
+    gap: 16px;
+  }
+
+  .gallery-item {
+    flex-basis: 100%;
+  }
 }
+
+/* п'ятий екран */
 
 @media screen and (max-width: 575px) {
   .navbar {
-    flex-direction: column;
-    background-color: blueviolet;
+    background-color: rgb(0, 0, 0);
+    padding: 0px 60px;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+  
   }
 
   .menu {
+    display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    font-size: medium;
   }
 
   .menu a {
+    margin: 0px 0px;
+    padding: 0px 4px;
     line-height: 2em;
   }
+
+  .menu a.active {
+    background-color: transparent;
+  }
+
+  .logo {
+    color: white;
+    font-size: 18px;
+
+    
+  }
+  .logo a {
+    color: white;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  .logo :hover {
+    color: rgb(255, 225, 0);
+  }
+  .likeme {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 60px;
+  }
+
+  .ollka {
+    width: 100%;
+  }
+  .photome {
+    width: 100%;
+  }
+  .biography {
+    padding: 32px 60px;
+  }
+
+  .dogi {
+    padding: 0 60px;
+    padding-bottom: 100px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gallery {
+    padding: 32px 60px 32px 60px;
+    gap: 16px;
+  }
+
+  .gallery-item {
+    flex-basis: 100%;
+  }
+
+  
 }
