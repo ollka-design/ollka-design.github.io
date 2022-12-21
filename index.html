@@ -190,6 +190,8 @@
 
 
 
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"></script>
 
 <script type="text/javascript">
@@ -237,6 +239,31 @@ pagination: {
 </script>
 
 <script src="js/mobilemenujs"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/menuspy@latest/dist/menuspy.min.js"></script>
+    <script>
+      const initMenuSpy = () => {
+        return new MenuSpy(document.querySelector(".header .navbar"), {
+          // threshold: 60,
+        });
+      };
+      let menuspy = initMenuSpy();
+
+      window.addEventListener("resize", () => {
+        menuspy.destroy();
+        menuspy = initMenuSpy();
+
+        if (window.location.hash) {
+          const sectionId = window.location.hash
+            ? window.location.hash
+            : "#top";
+          document.querySelector(sectionId)?.scrollIntoView(false);
+          window.location.replace = sectionId;
+          // console.log(sectionId);
+        }
+      });
+    </script>
+
 
 </body>
 </html>

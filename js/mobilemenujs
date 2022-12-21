@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			mobileMenu_toggle();
 		  });
   
+		// Аби меню закривалося при кліці виборі пункту
 		document.querySelectorAll("#mobile-menu-content a").forEach((item) => {
 		  item.addEventListener("click", (event) => {
 			document.getElementById("mobile-menu").classList.remove("open");
@@ -35,6 +36,16 @@ document.addEventListener("DOMContentLoaded", () => {
 			  .classList.remove("open");
 		  });
 		});
+  
+		// Аби меню закривалося при кліці по логотипу
+		document
+		  .querySelector(".logo")
+		  .addEventListener("click", function (event) {
+			document.getElementById("mobile-menu").classList.remove("open");
+			document
+			  .getElementById("mobile-menu-content")
+			  .classList.remove("open");
+		  });
 	  }
 	} else {
 	  mobileMenu_destroy();
@@ -50,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	menu_content.appendChild(menu_content_overflow);
   
 	let navigation_clone = document
-	  .querySelector(".header .navbar > ul")
+	  .querySelector(".header .navbar > ul") 
 	  .cloneNode(true);
   
 	navigation_clone.classList.remove("menu");
